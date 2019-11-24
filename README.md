@@ -6,17 +6,11 @@ install.packages("csv")
 install.packages("RColorBrewer")
 library(csv)
 library(RColorBrewer)
-
-
-
 ##choose.file()에서 인터넷 이용율2017 선택
 int2017 <- read.csv(choose.files())
 
 int2017
 str(int2017)
-
-
-
 barplot(int2017$이용률, names = int2017$연도, ylim=c(0,100),col="skyblue")
 title(main = "인터넷 이용률 2017")
 ```
